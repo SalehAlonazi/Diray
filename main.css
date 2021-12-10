@@ -1,0 +1,64 @@
+body {
+    background-color: whitesmoke; 
+}
+.wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+#subject{
+width: 35%;
+margin: 8px;
+}
+
+.submit{
+    width: fit-content;
+}
+#container{
+width: fit-content;
+background-color: #004E64;
+padding: 5px;
+justify-content: center;
+align-items: center;
+margin-bottom: 8px;
+}
+#container h5 {
+    color: #EFF2F1;
+    margin: 8px;
+}
+
+#container textarea {
+    font-family: -webkit-pictograph;
+    font-size: 14px;
+    width: 60%;
+    height: 9em;
+}
+
+#mainCotainer {
+display: flex;
+height: 100%;
+justify-content: center;
+}
+
+.cardsContainer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.card-body{
+    padding: 0.6rem 0;
+}
+.card {
+    width: 18rem;
+    margin:8px
+}
+.card-title {
+    text-align: center;
+    border-bottom: #004E64 3px solid;
+    font-weight: 700;
+    
+} 
+.card-text{
+    font-size: 17px;
+}
