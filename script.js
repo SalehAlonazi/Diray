@@ -1,11 +1,11 @@
     var container = document.getElementById("2Container");
     
     var today = new Date();
-    var dd = String(today.getDate()).padStart(2, '0');
-    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    var yyyy = today.getFullYear();
+    // var dd = String(today.getDate()).padStart(2, '0');
+    // var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    // var yyyy = today.getFullYear();
 
-    today = mm + '/' + dd + '/' + yyyy;
+    // today = mm + '/' + dd + '/' + yyyy;
 
 function newElement() {
 
@@ -35,8 +35,6 @@ function newElement() {
         h5.appendChild(t);
         p.appendChild(ts)
         p.insertAdjacentText("afterend",today)
-        
+    
     }
-
-
 }
