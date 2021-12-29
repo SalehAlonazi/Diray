@@ -1,5 +1,8 @@
 body {
-    background-color: whitesmoke; 
+background-color: #E8E1D9
+}
+header{
+    border-bottom: 3px solid black;
 }
 .wrapper {
         display: flex;
@@ -16,7 +19,7 @@ margin: 8px;
 }
 #container{
 width: fit-content;
-background-color: #004E64;
+background-color: #22577E;
 padding: 5px;
 justify-content: center;
 align-items: center;
@@ -41,10 +44,10 @@ justify-content: center;
 }
 
 .cardsContainer{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 .card-body{
     padding: 0.6rem 0;
