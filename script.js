@@ -5,7 +5,6 @@
     // var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     // var yyyy = today.getFullYear();
 
-    // today = mm + '/' + dd + '/' + yyyy;
 
 function newElement() {
 
@@ -16,7 +15,6 @@ function newElement() {
     if (inputTitle === "" || inputSubject === "") {
         alert("you have to enter somthing for me to work")
     } else {
-
         var d = document.createElement
         var carddiv = document.createElement("div");
         carddiv.setAttribute("class", "card")
