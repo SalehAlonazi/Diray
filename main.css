@@ -1,5 +1,5 @@
 body {
-background-color: #E8E1D9
+background-color: #E8E1D9;
 }
 header{
     border-bottom: 3px solid black;
@@ -19,7 +19,7 @@ margin: 8px;
 }
 #container{
 width: fit-content;
-background-color: #22577E;
+background-color: #22577E; 
 padding: 5px;
 justify-content: center;
 align-items: center;
@@ -42,12 +42,31 @@ display: flex;
 height: 100%;
 justify-content: center;
 }
-
+#icon{
+    transition:ease 0.25s;
+    -webkit-transition:ease 0.25s;
+    -moz-transition:ease 0.25s;
+    -ms-transition:ease 0.25s;
+    -o-transition:ease 0.25s;
+}
+#icon :hover{
+    transform: ease 1.5s;
+    -webkit-transform: ease 1.5s;
+    -moz-transform: ease 1.5s;
+    -ms-transform: ease 1.5s;
+    -o-transform: ease 1.5s;
+}
 .cardsContainer{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+}
+@media only screen and (max-width: 600px) {
+    .cardsContainer {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .card-body{
     padding: 0.6rem 0;

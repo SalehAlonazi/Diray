@@ -1,9 +1,10 @@
     var container = document.getElementById("2Container");
-    
+    var containerM = document.getElementById("Container");
+
     var today = new Date();
-    // var dd = String(today.getDate()).padStart(2, '0');
-    // var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    // var yyyy = today.getFullYear();
+    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    var time = (today.getHours())/12 + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date+' '+time;
 
 
 function newElement() {
@@ -32,7 +33,7 @@ function newElement() {
         var ts = document.createTextNode(inputSubject)
         h5.appendChild(t);
         p.appendChild(ts)
-        p.insertAdjacentText("afterend",today)
+        p.insertAdjacentText("afterend",dateTime)
     
     }
 }
