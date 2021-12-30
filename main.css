@@ -57,10 +57,10 @@ justify-content: center;
     -o-transform: ease 1.5s;
 }
 .cardsContainer{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+height: 45%;
+width: 88%;
+text-align: center;
+padding: 4px;
 }
 @media only screen and (max-width: 600px) {
     .cardsContainer {
@@ -70,17 +70,31 @@ justify-content: center;
 }
 .card-body{
     padding: 0.6rem 0;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
+
 .card {
-    width: 18rem;
-    margin:8px
+    display: flex;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    width: 100%;
 }
 .card-title {
-    text-align: center;
-    border-bottom: #004E64 3px solid;
+    padding: 10px;
+    border-right: #004E64 3px solid;
     font-weight: 700;
     
 } 
 .card-text{
     font-size: 17px;
+}
+.card-text p::after{
+    justify-self: center;
+    opacity: 0.2;
 }

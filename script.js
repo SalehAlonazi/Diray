@@ -3,10 +3,21 @@
 
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var time = (today.getHours())/12 + ":" + today.getMinutes() + ":" + today.getSeconds();
-    var dateTime = date+' '+time;
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    var hours = today.getHours();
+    var minutes = today.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0'+minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
 
 
+
+
+
+    var dateTime = date + ' ' + strTime;
 function newElement() {
 
     var cardCon = document.getElementById("cardss");
@@ -33,7 +44,8 @@ function newElement() {
         var ts = document.createTextNode(inputSubject)
         h5.appendChild(t);
         p.appendChild(ts)
-        p.insertAdjacentText("afterend",dateTime)
+        p.after(dateTime)
+        // p.insertAdjacentText("afterend",dateTime)
     
     }
 }
