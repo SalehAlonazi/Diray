@@ -42,7 +42,7 @@ header {
     -o-transform: ease 1.5s;
 }
 .card {
-    width: 350px;
+    width: fit-content!important;
     background-color: #efefef;
     border: none;
     cursor: pointer;
@@ -68,6 +68,9 @@ header {
 }
 #imgB{ 
     border-radius: 50%;
+    color: #fff;
+    background-color: var(--thired-color);
+    border-color: var(--accent-color);
 }
 #imgB img {
     border-radius: 50%;
@@ -101,9 +104,8 @@ header {
     height: 40px;
     width: 150px;
     border: none;
-    background-color: #000;
-    color: #aeaeae;
-    font-size: 15px
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 .text span {
@@ -122,8 +124,8 @@ hr .new1 {
 
 .join {
     font-size: 14px;
-    color: #a0a0a0;
-    font-weight: bold
+    background-color: var(--main-color);
+    font-weight: bold;
 }
 
 .date {
