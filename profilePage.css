@@ -1,8 +1,14 @@
+html {
+    height: 100%;
+}
+
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
-body  {
+
+body {
     background-color: #E8E1D9 !important;
 
 }
@@ -10,21 +16,6 @@ body  {
 header {
     border-bottom: 3px solid black;
 }
-#icon {
-    transition: ease 0.25s;
-    -webkit-transition: ease 0.25s;
-    -moz-transition: ease 0.25s;
-    -ms-transition: ease 0.25s;
-    -o-transition: ease 0.25s;
-}
-
-#icon :hover {
-    transform: ease 1.5s;
-    -webkit-transform: ease 1.5s;
-    -moz-transform: ease 1.5s;
-    -ms-transform: ease 1.5s;
-    -o-transform: ease 1.5s;
-}
 
 #icon {
     transition: ease 0.25s;
@@ -41,8 +32,25 @@ header {
     -ms-transform: ease 1.5s;
     -o-transform: ease 1.5s;
 }
+
+#icon {
+    transition: ease 0.25s;
+    -webkit-transition: ease 0.25s;
+    -moz-transition: ease 0.25s;
+    -ms-transition: ease 0.25s;
+    -o-transition: ease 0.25s;
+}
+
+#icon :hover {
+    transform: ease 1.5s;
+    -webkit-transform: ease 1.5s;
+    -moz-transform: ease 1.5s;
+    -ms-transform: ease 1.5s;
+    -o-transform: ease 1.5s;
+}
+
 .card {
-    width: fit-content!important;
+    width: fit-content !important;
     background-color: #efefef;
     border: none;
     cursor: pointer;
@@ -66,15 +74,18 @@ header {
     width: 140px;
     border-radius: 50%
 }
-#imgB{ 
+
+#imgB {
     border-radius: 50%;
     color: #fff;
     background-color: var(--thired-color);
     border-color: var(--accent-color);
 }
+
 #imgB img {
     border-radius: 50%;
 }
+
 .name {
     font-size: 22px;
     font-weight: bold

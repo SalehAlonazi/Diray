@@ -1,121 +1,19 @@
-*{
-    --main-color:#C8C6C6; 
-    --secondary-color:#007678;
-    --thired-color:#619B98;
-    --accent-color:#C0FCF9;
+* {
+    --main-color: #C8C6C6;
+    --secondary-color: #007678;
+    --thired-color: #619B98;
+    --accent-color: #C0FCF9;
     font-family: 'Cairo',
-    sans-serif;
+        sans-serif;
 }
 
 body {
-background-color: #E8E1D9;
+    background-color: #E8E1D9;
 }
-header{
+
+header {
     border-bottom: 3px solid black;
     background-color: var(--thired-color);
     font-weight: 600;
     font-size: large;
 }
-.wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-}
-#subject{
-width: 35%;
-margin: 8px;
-}
-
-.submit{
-    width: fit-content;
-}
-#container{
-    width: fit-content;
-    background-color: var(--secondary-color);
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-}
-#container h5 {
-    color: #EFF2F1;
-    margin: 8px;
-}
-
-#container textarea {
-    font-family: -webkit-pictograph;
-    font-size: 14px;
-    width: 60%;
-    height: 9em;
-}
-
-#mainCotainer {
-display: flex;
-height: 100%;
-justify-content: center;
-}
-#icon{
-    transition:ease 0.25s;
-    -webkit-transition:ease 0.25s;
-    -moz-transition:ease 0.25s;
-    -ms-transition:ease 0.25s;
-    -o-transition:ease 0.25s;
-}
-#icon :hover{
-    transform: ease 1.5s;
-    -webkit-transform: ease 1.5s;
-    -moz-transform: ease 1.5s;
-    -ms-transform: ease 1.5s;
-    -o-transform: ease 1.5s;
-}
-.cardsContainer{
-    height: 45%;
-    max-width: 37%;
-    text-align: center;
-}
-@media only screen and (max-width: 600px) {
-    .cardsContainer {
-    max-width: fit-content;
-    margin: 5px 10px;
-    }
-}
-.card-body{
-    padding: 0.6rem 0;
-    margin-bottom: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.card {
-    display: flex;
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: 0.25rem;
-    width: 100%;
-    margin-bottom: 8px;
-}
-.card-title-1{
-    padding: 10px;
-    border-right: black 3px solid;
-    font-weight: 700;
-
-}
-.card-title {
-    padding: 10px;
-    border-right: #004E64 3px solid;
-    font-weight: 700;
-    
-} 
-.card-text{
-    font-size: 17px;
-    word-break: break-word;
-    text-align: center;
-}
-/* p::after{
-    position: absolute;
-    left: 50%;
-    translate: 50%;
-} */
